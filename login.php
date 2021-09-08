@@ -12,7 +12,12 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
 		$chat->updateUserOnline($user[0]['userid'], 1);
 		$lastInsertId = $chat->insertUserLoginDetails($user[0]['userid']);
 		$_SESSION['login_details_id'] = $lastInsertId;
-		header("Location:index.php");
+		//header("Location: index.php");
+		?>
+		<script>
+		window.location.href = 'https://www.quimili.com.ar/chat/index.php';
+		</script>
+		<?php 
 	} else {
 		$loginError = "Usuario y Contraseña invalida";
 	}
