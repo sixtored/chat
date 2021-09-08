@@ -22,6 +22,8 @@
   max-height: 720px;
   background: #E6EAEA;
 }
+
+
 @media screen and (max-width: 360px) {
   #frame {
     width: 100%;
@@ -722,4 +724,18 @@ ol, ul {
     text-align: center;
     background-color: #999;
     border-radius: 10px;
+}
+
+@media all and (min-width: 320px) and (max-width: 599px) {
+
+   #frame #sidepanel #profile {
+  width: 80%;
+  margin: 25px auto;
+}
+
+  #frame {
+    height: 50vh;
+  }
+
+
 }
