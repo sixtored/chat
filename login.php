@@ -19,14 +19,14 @@ if (!empty($_POST['username']) && !empty($_POST['pwd'])) {
 }
 
 ?>
-<title>Sistema de chat en vivo con Ajax, PHP y MySQL</title>
+<title>Sistema de chat</title>
 <?php include('container.php');?>
 <div class="container">		
-	<h2>Sistema de chat en vivo con Ajax, PHP y MySQL</h1>		
+	<h2>Sistema de chat</h1>		
 	<div class="row">
 		<div class="col-sm-4">
 			<h4>Chat Login:</h4>		
-			<form method="post">
+			<form method="post" action="login.php">
 				<div class="form-group">
 				<?php if ($loginError ) { ?>
 					<div class="alert alert-warning"><?php echo $loginError; ?></div>
